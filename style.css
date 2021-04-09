@@ -1,94 +1,58 @@
-.coverImg{
-	height: 400px;
-	position: center;
-	width: 100%;
-/*    object-fit: cover;
-*/
+* {
+  margin: 0;
+  padding: 0;
 }
 
-*{
-    margin: 0;
-    padding: 0;
+.coverImg {
+  height: 400px;
+  position: center;
+  width: 100%;
 }
 
-html{
-    box-sizing:border-box;
-    font-size: 16px;
+html {
+  box-sizing: border-box;
+  font-size: 16px;
 }
-#products{
-    background-color : #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-
-}
-
-.grid{
-    display : grid;
-    width: 50rem;
-    grid-gap: 5rem;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    align-items: start;
+#products {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-.grid-item{
-/*    background-color: #77b9e3;
-*/    
-	border-radius: 15px;
-    overflow : hidden;
-/*    box-shadow : 0 5px 10px;
-*/    cursor : pointer;
-    transition: .5s;
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-.grid-item:hover{
-/*
-    transform : translateY(-0.5%);
-    box-shadow: 0 6px 12px;
-*/}
+.grid-item {
+  width: 30rem;
+  overflow: hidden;
 
-.card{
-    padding: 10%;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
-.card-title{
-    font-size: 2rem;
-    margin-bottom : .5rem;
-
+.card {
+  padding: 5%;
+  width: 100%;
 }
 
-.cardText{
-    line-height: 1.5;
-    letter-spacing: 1px;
+.card-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
-.cardImg{
-    display : block;
-    width : 100%;
-    height: 100%;
-
+.cardText {
+  line-height: 1.5;
+  letter-spacing: 1px;
 }
 
-/*.cardBtn{
-    display : block;
-    width : 100%;
-    border-radius: 10%;
-    padding: 2.5%;
-    background-color: #45de61;
-    letter-spacing:1px;
-    transition: 0.5s;
-    cursor : pointer;
-    border: none;
-}*/
-
-.cardBtn:hover,.cardBtn:active{
-    background-color: #3ead55;
-}
-
-
-@media only screen and (max-width: 60em) {
-    .grid {
-        grid-gap: 3rem;
-    }
+.cardImg {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
